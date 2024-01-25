@@ -5,7 +5,7 @@ int factorial(int);
 
 
 int isPrime(int number) {
-    if (number <= 1) {
+    if (number < 1) {
         return 0;  
     }
     for (int i = 2; i * i <= number; ++i) {
