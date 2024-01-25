@@ -35,10 +35,10 @@ mains: $(OBJECT_MAIN) libclassrec.a
 	$(CC) $(FLAGS) -o mains $(OBJECT_MAIN) libclassrec.a
 
 maindloop: $(OBJECT_MAIN) libclassloops.so
-	$(CC) $(FLAGS) -o maindloop $(OBJECT_MAIN) libclassloops.so
+	$(CC) $(FLAGS) -o maindloop $(OBJECT_MAIN) ./libclassloops.so
 
 maindrec: $(OBJECT_MAIN) libclassrec.so
-	$(CC) $(FLAGS) -o maindrec $(OBJECT_MAIN) libclassrec.so
+	$(CC) $(FLAGS) -o maindrec $(OBJECT_MAIN) ./libclassrec.so
 
 
 $(OBJECT_MAIN): main.c $(HEADER_NUMCLASS)
