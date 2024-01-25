@@ -19,7 +19,7 @@ recursived: libclassrec.so
 loopd: libclassloops.so
 	
 
-libclassloops: $(OBJECT_BASIC) $(OBJECT_LOOP)
+libclassloops.a: $(OBJECT_BASIC) $(OBJECT_LOOP)
 	$(AR) -rcs libclassloops.a $(OBJECT_BASIC) $(OBJECT_LOOP)      
 
 libclassrec.a: $(OBJECT_BASIC) $(OBJECT_RECURSION)
