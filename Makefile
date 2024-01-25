@@ -26,7 +26,7 @@ libclassrec.a: $(OBJECT_BASIC) $(OBJECT_RECURSION)
 	$(AR) -rcs libclassrec.a $(OBJECT_BASIC) $(OBJECT_RECURSION)
 
 libclassrec.so:  $(OBJECT_BASIC) $(OBJECT_RECURSION)
-	$(CC) $(FLAGS)-shared  $(CFLAGS) -o libclassrec.so  $(OBJECT_BASIC) $(OBJECT_RECURSION)
+	$(CC) $(FLAGS) -shared  $(CFLAGS) -o libclassrec.so  $(OBJECT_BASIC) $(OBJECT_RECURSION)
 
 libclassloops.so:  $(OBJECT_BASIC) $(OBJECT_LOOP)
 	$(CC) $(FLAGS) -shared  $(CFLAGS) -o libclassloops.so $(OBJECT_BASIC) $(OBJECT_LOOP)
